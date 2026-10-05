@@ -3,7 +3,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const darkModeToggle = document.getElementById('darkModeToggle');
 
 darkModeToggle.addEventListener('click', () => {
-    // Toggles the .dark-mode class on and off
     document.body.classList.toggle('dark-mode');
     
     if (document.body.classList.contains('dark-mode')) {
