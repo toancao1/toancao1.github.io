@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
+     <header>
     <div class="navbar">
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="work.html">Work</a>
         <a href="contact.html">Contact</a>
     </div>
-
+     <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle Dark Mode">🌙</button>
+    </header>
+    
     <main class="content">
         <p>Hi. I'm Toan. This is my personal website. I am a graduate in IRM at Carleton.</p>
     </main>
 
     <footer>
-        <p>Copyright &copy; 2024 Toan Cao</p>
+     <p>Copyright &copy; <span id="year"></span> Toan Cao</p>
     </footer>
     <!-- JS -->
     <script>
