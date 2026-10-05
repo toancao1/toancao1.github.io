@@ -17,9 +17,7 @@ const menuToggle = document.getElementById('menuToggle');
 const navbar = document.getElementById('navbar');
 
 menuToggle.addEventListener('click', () => {
-    // Opens or closes the mobile nav menu
     navbar.classList.toggle('mobile-open');
-    
     if (navbar.classList.contains('mobile-open')) {
         menuToggle.textContent = '✕';
     } else {
