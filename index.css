@@ -75,6 +75,52 @@ p {
     color: black;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 14px 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block; 
+        color: inherit;
+    }
+    
+    body.dark-mode .menu-toggle {
+        color: #ffffff;
+    }
+
+    .navbar {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        order: 3; 
+    }
+
+    .navbar.mobile-open {
+        display: flex;
+    }
+
+    .navbar a {
+        text-align: left;
+        padding: 12px 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    body.dark-mode .navbar a {
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+}
+
 footer {
     border-top: 1px solid #000000;
     margin: 40px auto 20px auto;
